@@ -16,12 +16,6 @@
     <mat-icon>list</mat-icon> &nbsp; Feed
 </a>
 
-<a [routerLink]="['/news/']"
-   routerLinkActive="active-link"
-   mat-list-item>
-    <mat-icon>rss_feed</mat-icon> &nbsp; News
-</a>
-
 <a mat-list-item
    [routerLink]="['/explore/']"
    routerLinkActive="active-link">
@@ -34,28 +28,10 @@
     <mat-icon>restaurant</mat-icon> &nbsp; Mess Menu
 </a>
 
-<a [routerLink]="['/blog/' + dataService.EncodeObject(api.PlacementBlog)]"
-   routerLinkActive="active-link"
-   mat-list-item>
-    <mat-icon>work</mat-icon> &nbsp; Placement Blog
-</a>
-
-<a [routerLink]="['/blog/' + dataService.EncodeObject(api.TrainingBlog)]"
-   routerLinkActive="active-link"
-   mat-list-item>
-    <mat-icon>work</mat-icon> &nbsp; Internship Blog
-</a>
-
 <a [routerLink]="['/calendar']"
    routerLinkActive="active-link"
    mat-list-item>
     <mat-icon>event_available</mat-icon> &nbsp; Calendar
-</a>
-
-<a [routerLink]="['/map']"
-   routerLinkActive="active-link"
-   mat-list-item>
-    <mat-icon>map</mat-icon> &nbsp; Map
 </a>
 
 <a [routerLink]="['/quick-links']"

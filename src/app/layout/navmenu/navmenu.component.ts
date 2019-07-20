@@ -3,8 +3,8 @@ import { DataService } from '../../data.service';
 import { Router } from '@angular/router';
 import { API } from '../../../api';
 
-const DEFAULT_USERNAME = 'Guest';
-const DEFAULT_LDAP = 'IITB User';
+const DEFAULT_USERNAME = 'Student';
+const DEFAULT_LDAP = 'IITKGP';
 const DEFAULT_PROFILE_PIC = 'assets/useravatar.svg';
 
 @Component({

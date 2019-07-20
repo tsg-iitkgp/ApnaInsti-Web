@@ -21,11 +21,9 @@
     <h1 class="app-name">
         {{ _title }}
     </h1>
-
     <div class="fill-space"></div>
     <button mat-button
-            (click)="login()"
-            *ngIf="!this.dataService.isLoggedIn()">
+            (click)="login()">
         Log In
     </button>
 

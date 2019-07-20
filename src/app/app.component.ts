@@ -195,11 +195,12 @@ export class AppComponent implements OnDestroy, OnInit {
 
   /** Redirects to login */
   login() {
-    if (!this.router.url.includes('login')) {
-      const path = [this.router.url];
-      localStorage.setItem(this.dataService.LOGIN_REDIR, this.dataService.EncodeObject(path));
-    }
-    window.location.href = this.dataService.GetLoginURL();
+    alert('Coming Soon...');
+    // if (!this.router.url.includes('login')) {
+    //   const path = [this.router.url];
+    //   localStorage.setItem(this.dataService.LOGIN_REDIR, this.dataService.EncodeObject(path));
+    // }
+    // window.location.href = this.dataService.GetLoginURL();
   }
 
   /** Handle reaching end of page and sidenav on android chrome */

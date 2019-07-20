@@ -1,10 +1,6 @@
 {
     "/api/**": {
-      "target": {
-          "host": "insti.app",
-          "protocol": "https:",
-          "port": 443
-        },
+      "target": "http://localhost:8000",
       "secure": false,
       "changeOrigin": true,
       "logLevel": "info"

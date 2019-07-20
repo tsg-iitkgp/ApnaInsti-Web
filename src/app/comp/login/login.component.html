@@ -2,11 +2,22 @@
 
 <div class="main" *ngIf="!authenticating && !error">
   <div class="head">
-    Follow events, get updates on internships, placements and more. Login with your LDAP account to continue.
+    Follow events, get updates on internships, and more. Login with your LDAP account to continue.
   </div>
 
+  <input matInput placeholder="Institute Email ID"
+            name="task"
+            class="rl-header xs name"
+            #usernameInput>
+
+  <input matInput placeholder="Password"
+            name="password"
+            type="string"
+            class="rl-header xs password"
+            #passwordInput>
+
   <button mat-raised-button
-          (click)='login()'
+          (click)='submit(usernameInput, passwordInput)'
           color="accent"
           class="login-button">
       LOG IN

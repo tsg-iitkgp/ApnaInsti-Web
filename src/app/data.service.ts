@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject, noop } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpRequest, HttpEventType } from '@angular/common/http';
-import { IEnumContainer, IUserProfile, ILocation, IEvent, IBody, INewsEntry, INotification } from './interfaces';
+import { IEnumContainer, IUserProfile, ILocation, IEvent, IBody, INewsEntry, INotification, ILoginResp } from './interfaces';
 import { Router } from '@angular/router';
 import { environment } from '../environments/environment';
 import * as uriTemplates from 'uri-templates';
@@ -207,6 +207,11 @@ export class DataService {
   /** Get all locations */
   GetAllLocations(excludeGroup: number = null): Observable<ILocation[]> {
     return this.FireGET<ILocation[]>(API.Locations, {exclude_group: excludeGroup});
+  }
+
+  /** sends data for user login */
+  GetUserLogin(username: string, password: string): Observable<ILoginResp> {
+    return this.FireGET<ILoginResp>(API.Login, {username: username, password: password});
   }
 
   /** Gets the current user if logged in

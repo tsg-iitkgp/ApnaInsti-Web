@@ -19,11 +19,8 @@ export const API = {
     PostImage: 'api/upload',
 
     LoggedInUser: 'api/login/get-user',
-    Login: 'api/login{?code,redir}',
+    Login: 'api/login{?username,password}',
     Logout: 'api/logout',
-
-    PlacementBlog: 'api/placement-blog{?from,num,query}',
-    TrainingBlog: 'api/training-blog{?from,num,query}',
 
     NewsFeed: 'api/news{?from,num,body,query}',
     NewsFeedReaction: 'api/user-me/unr/{uuid}{?reaction}',

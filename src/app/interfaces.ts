@@ -3,6 +3,11 @@
     data: any;
 }
 
+export interface ILoginResp {
+  status: number;
+  message: string;
+}
+
 export interface IUserProfile {
     id: string;
     name: string;
